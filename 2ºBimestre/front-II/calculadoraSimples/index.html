@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA SIMPLES</title>
+</head>
+<body>
+    <script>
+        let escolha = prompt('somar ou subtrair?')
+        if(escolha === 'somar'){
+            let n1 = Number(prompt('Coloque o primeiro valor: '))
+            let n2 = Number(prompt('Coloque um segundo valor: '))
+            prompt(`${n1} + ${n2} = ${(n1 + n2)}`)
+        }else if(escolha === 'subtrair'){
+            let n1 = Number(prompt('Coloque o primeiro valor: '))
+            let n2 = Number(prompt('Coloque um segundo valor: '))
+            prompt(`${n1} + ${n2} = ${(n1 - n2)}`)
+        }else if(escolha != 'somar' || 'subtrair'){
+            alert(`Opção não existe!`)
+        }
+        
+    </script>
+</body>
+</html>
