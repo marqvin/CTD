@@ -65,12 +65,12 @@ public class UsuarioJogo {
     }
     public void subirNivel(int nivel){
         this.nivel = this.nivel + nivel;
-        System.out.println(this.nickName + " subiu de nível!!");
+        System.out.println(this.nickName + " subiu ao nível " + nivel);
     }
 
     public void bonus(int valor){
         this.pontuacao = this.pontuacao + valor;
-        System.out.println("Você ganhou um Bônus de %d pontos!!" + pontuacao);
+        System.out.println(this.nickName + " ganhou um Bônus de " + valor + " pontos!!");
     }
 
 

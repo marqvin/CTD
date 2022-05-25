@@ -17,6 +17,9 @@ public class Programa {
 
         UsuarioJogo u2 = new UsuarioJogo("Sara","fliperonnn", 0,0);
         u2.aumentarPontuacao(1);
+        u2.bonus(2);
+        u2.subirNivel(5);
         System.out.println(u2);
+
     }
 }
