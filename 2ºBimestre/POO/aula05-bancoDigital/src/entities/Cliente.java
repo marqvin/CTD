@@ -36,12 +36,23 @@ public class Cliente {
     public double getDivida() {
         return divida;
     }
-
-    public void setDivida(double divida) {
-        this.divida = divida;
+    // Métodos customizados
+    public void aumentarDivida(double valor){
+        this.divida = this.divida + valor;
+        System.out.println("Sua dívida agora é de R$" + this.divida);
     }
 
-    @Override // Iste é uma anotação, como se fosse um método.. sobrescrita
+    public void pagarDivida(double valor){
+        this.divida = this.divida - valor;
+        if(this.divida == 0){
+            System.out.println("Você não tem mais Dívida ;)");
+        }else {
+            System.out.println("Você ainda tem Dívida :(");
+        }
+    }
+
+
+        @Override // Iste é uma anotação, como se fosse um método.. sobrescrita
     public String toString() {
         return "Cliente{" +
                 "numeroCliente=" + numeroCliente +
