@@ -4,8 +4,8 @@ public class ContaPJ extends Conta{
 
     private String cnpj;
 
-    public ContaPJ(int numero, String nome, String cnpj) {
-        super(numero, nome);
+    public ContaPJ(int numero, String nome, String cnpj, double valor) {
+        super(numero, nome, valor);
         this.cnpj = cnpj;
     }
 

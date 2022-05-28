@@ -9,10 +9,14 @@ public class Programa {
 //        Conta c1 = new Conta(446565,"Vinicius Marques");
 //        System.out.println(c1);
 
-        ContaPF cPF1 = new ContaPF(25111,"ZUZE", "640.456.464-46");
+        ContaPF cPF1 = new ContaPF(25111,"ZUZE", "640.456.464-46", 1000);
         System.out.println(cPF1);
 
-        ContaPJ cPJ1 = new ContaPJ(1133123,"Vibrom", "50.465.3312.0001-9");
+        ContaPJ cPJ1 = new ContaPJ(1133123,"Vibrom", "50.465.3312.0001-9", 1000);
+
+        cPJ1.depositar(-5);
+//        cPJ1.sacar(12);
+
         System.out.println(cPJ1);
 
 
