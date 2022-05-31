@@ -1,8 +1,9 @@
 package entities;
+import entities.Atendente;
 
-public class Paciente extends Usuario{
+public class Paciente extends Atendente{
 
-    private int idPaciente;
+    private int cpf;
     private String nome;
     private int celular;
     private String dataNasc;
@@ -11,20 +12,20 @@ public class Paciente extends Usuario{
 
     }
 
-    public Paciente(int idPaciente, String nome, int celular, String dataNasc) {
+    public Paciente(int cpf, String nome, int celular, String dataNasc) {
 
-        this.idPaciente = idPaciente;
+        this.cpf = cpf;
         this.nome = nome;
         this.celular = celular;
         this.dataNasc = dataNasc;
     }
 
-    public int getIdPaciente() {
-        return idPaciente;
+    public int getCpf() {
+        return cpf;
     }
 
-    public void setIdPaciente(int idPaciente) {
-        this.idPaciente = idPaciente;
+    public void setCpf(int idPaciente) {
+        this.cpf = idPaciente;
     }
 
     public String getNome() {
@@ -51,37 +52,29 @@ public class Paciente extends Usuario{
         this.dataNasc = dataNasc;
     }
 
-    public void verificarExame(){
-        Exame exame = new Exame();
-        if(exame.isStatusExame() != false){
-            System.out.println("Exame Marcado");
-        }else {
-            System.out.println("Exame Desmarcado");
-        }
+    public void verificarExame() {
+        System.out.printf("\nDados da exame do(a) Paciente " + this.nome + "\n");
+        System.out.println(isStatusExame());
+        System.out.println(getDataExame());
+        System.out.println(getTipoExame() + "\n");
 
-        System.out.println("Data do Exame: " + exame.getDataExame());
-        System.out.println("Tipo de Exame: " + exame.getTipoExame());
-        System.out.println("Data do Exame: " + exame.getDataExame());
     }
 
     public void verificarConsulta(){
-        Consulta consulta = new Consulta();
-        if(consulta.isStatusConsulta() != false){
-            System.out.println("Consulta Marcada");
-        }else {
-            System.out.println("Consulta Desmarcada");
-        }
 
-        System.out.println("Data da consulta: " + consulta.getDataConsulta());
-        System.out.println("Especialidade: " + consulta.getEspecialidade());
-        System.out.println("Nome do médico: " + consulta.getNomeMedico());
+        System.out.printf("\nDados da consulta do(a) Paciente " + this.nome + "\n");
+        System.out.println(isStatusConsulta());
+        System.out.println(getEspecialidade());
+        System.out.println(getDataConculta());
+        System.out.println(getNomeMedico() + "\n");
+
+
     }
 
     @Override
     public String toString() {
-        return super.toString() +
-                "Paciente{" +
-                "idPaciente=" + idPaciente +
+        return "Paciente{" +
+                "cpf=" + cpf +
                 ", nome='" + nome + '\'' +
                 ", celular=" + celular +
                 ", dataNasc='" + dataNasc + '\'' +

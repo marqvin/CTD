@@ -21,19 +21,17 @@ public class Medico extends Usuario{
 
 
     public void criarGuiaExame(){
-        Exame exame = new Exame();
-        Scanner entrada = new Scanner(System.in);
+        System.out.println("Guia de Exame criado com Sucesso");
 
-        exame.setStatusExame(true);
+    }
 
-        System.out.println("Digite o tipo de exame ao Paciente: ");
-        exame.setTipoExame(entrada.nextLine());
-
-        System.out.println("Digite a data do Exame: ");
-        exame.setDataExame(entrada.nextLine());
-
-
-
-
+    @Override
+    public String toString() {
+        return super.toString() +
+                "Medico{" +
+                "CRM=" + CRM +
+                ", nome='" + nome + '\'' +
+                ", especialidade='" + especialidade + '\'' +
+                '}';
     }
 }
