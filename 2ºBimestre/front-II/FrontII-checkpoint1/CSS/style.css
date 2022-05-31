@@ -39,48 +39,6 @@ body {
     position: relative;
 }
 
-.formItem .fa-circle-check {
-    position: absolute;
-    top: 45px;
-    right: 20px;
-    color: green;
-    visibility: hidden;
-    
-}
-
-.formItem .fa-circle-xmark {
-    position: absolute;
-    top: 45px;
-    right: 20px;
-    color: red;
-    visibility: hidden;
-
-}
-
-
-.formItem.sucess .fa-circle-check{
-    visibility: visible;
-}
-
-.formItem.sucess input {
-    border: green 2px solid;
-}
-
-.formItem.fail .fa-circle-xmark{
-    visibility: visible;
-}
-
-.formItem.fail input {
-    border: red 2px solid;
-
-}
-
-
-.error {
-    color: red;
-}
-
-
 
 .formulario input {
     padding: 10px;
@@ -98,16 +56,3 @@ body {
     cursor: pointer;
     background-color: aqua;
 }
-
-.formItem .fa-eye {
-    position: absolute;
-    top: 42.5px;
-    left: 190px;
-    visibility: hidden;
-  }
-  
-  .formItem .fa-eye-slash {
-    position: absolute;
-    top: 42.5px;
-    left: 189px;
-  }

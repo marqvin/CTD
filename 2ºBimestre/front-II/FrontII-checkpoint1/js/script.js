@@ -1,12 +1,8 @@
-const nome = document.getElementById('nome');
-const password = document.getElementById('senha');
-const email = document.getElementById('email');
-const confirmPassword = document.getElementById('confirmSenha');
+const titulo = document.getElementById('titulo');
+const descricao = document.getElementById('descricao');
+const urldaimagem = document.getElementById('urldaimagem');
 const form = document.getElementById('form');
-const error = document.querySelectorAll('.error');
 const formItem = document.querySelectorAll('.formItem')
-const openEye = document.getElementById('openEye')
-const slashedEye = document.getElementById('slashedEye')
 
 
 
@@ -14,14 +10,14 @@ form.addEventListener('submit', (e) => {
 
     
 
-    checkName();
-    checkPassword();
-    checkEmail();
+    checkTitulo();
+    checkdescricao();
+    checkUrlDaImagem();
   
 
-    function checkName() {
-        let mensagemError = [];
-        if (nome.value === '' || nome.value == null) {
+    function checkTitulo() {
+        let mensagedescricao [];
+        if (nome.valUrlDaImagem= '' || nome.value == null) {
             e.preventDefault();
             mensagemError.push('O nome é obrigatório')
             error[0].innerText = mensagemError;
