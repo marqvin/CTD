@@ -16,7 +16,7 @@ form.addEventListener('submit', (e) => {
   
 
     function checkTitulo() {
-        let mensagedescricao [];
+        let mensagedescricao = [];
         if (nome.valUrlDaImagem= '' || nome.value == null) {
             e.preventDefault();
             mensagemError.push('O nome é obrigatório')
