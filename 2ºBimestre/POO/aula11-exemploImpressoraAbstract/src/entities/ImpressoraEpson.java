@@ -17,7 +17,7 @@ public class ImpressoraEpson extends Impressora {
         } else if (temPapel() && precisaTinta()) {
             System.out.println("Você precisa adicionar tinta.");
         } else if (!temPapel() && precisaTinta()) {
-            System.out.println("Você precisa de tinta e de papel.");
+            System.out.println("Você precisa adicionar tinta e papel.");
         } else {
             System.out.println("Você está sem papel.");
         }
