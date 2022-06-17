@@ -41,4 +41,14 @@ public abstract class Empregado {
     }
 
     public abstract double calcularSalario(int dias);
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                "Empregado{" +
+                "nome='" + nome + '\'' +
+                ", sobrenome='" + sobrenome + '\'' +
+                ", arquivo='" + arquivo + '\'' +
+                '}';
+    }
 }

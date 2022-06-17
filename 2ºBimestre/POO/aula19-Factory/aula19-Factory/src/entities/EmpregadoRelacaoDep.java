@@ -29,4 +29,12 @@ public class EmpregadoRelacaoDep  extends Empregado{
     public double calcularSalario(int dias) {
         return (this.salarioMensal / 30) * dias;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                "EmpregadoRelacaoDep{" +
+                "salarioMensal=" + salarioMensal +
+                '}';
+    }
 }

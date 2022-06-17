@@ -30,4 +30,13 @@ public class EmpregadoContratado extends Empregado{
     public double calcularSalario(int dias) {
         return ((this.valorPorHora * 8) * dias) * (1 - this.imposto);
     }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                "EmpregadoContratado{" +
+                "valorPorHora=" + valorPorHora +
+                ", imposto=" + imposto +
+                '}';
+    }
 }
