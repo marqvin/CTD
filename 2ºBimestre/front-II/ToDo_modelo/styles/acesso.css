@@ -1,0 +1,176 @@
+@import url('./common.css');
+
+/* ______________ Configurações gerais _______________ */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+}
+
+
+
+/* ______________ Parte á esquerda com imagem _______________ */
+.left{
+  width: 50%;  
+  background-color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left img{
+  width:60%;
+}
+
+
+/* ______________ Parte á direita com formulário _______________ */
+.right{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-header {
+  color: grey;
+  font-size: 2em;
+}
+
+.ingressar{
+  text-align: center;
+}
+
+
+
+
+/* ______________ Estilo do Formulário _______________ */
+form {
+  position: relative;
+  max-width: 26em;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 2em auto;
+  box-shadow: 0 5px 5px lightgrey;
+  padding: 1em 2.5em;
+  box-sizing: border-box;
+}
+
+/* ______________ Configurações do Formulário _______________ */
+
+form:after {
+  position: absolute;
+  content: '';
+  width: .7em;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(var(--primary), var(--secondary));
+}
+
+input {
+  width: 100%;
+  padding: .4em .5em;
+  background-color: var(--app-grey);
+  border: 1px solid var(--app-grey);
+  border-radius: .2em;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid lightgrey;
+}
+
+label {
+  width: 100%;
+  font-weight: 300;
+  margin-bottom: -.1em;
+  margin-top: 1em;
+  font-size: .8em;
+}
+
+button {
+  padding: .5em 3em;
+  background-color: var(--primary);
+  color: white;
+  margin-top: 2em;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+
+.formItem {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  position: relative;
+}
+
+/* __________ Icon de correto __________ */
+.formItem .fa-circle-check {
+  position: absolute;
+  top: 45px;
+  right: 20px;
+  color: green;
+  visibility: hidden;
+}
+
+.formItem.sucess.fa-circle-check{
+  visibility: visible;
+}
+
+.formItem.sucesss input{
+  border:green 2px solid;
+}
+
+/* __________ Icon de incorreto ___________ */
+.fa-circle-xmark {
+  position: absolute;
+  top: 45px;
+  right: 20px;
+  color: red;
+  visibility: hidden;
+}
+
+.formItem.sucess.fa-circle-xmark{
+  visibility: visible;
+} 
+
+.formItem.fail input{
+  border: red 2px solid;
+}
+
+.error{
+  color: red;
+}
+
+.confirmCadastro {
+  text-align: center;
+  background-color: rgb(149, 253, 45);
+  padding: 5px;
+  border-radius: 5px;
+  display: none;
+}
+
+/* __________ Icon de ver senha __________ */
+
+.formItem .fa-eye {
+  position: absolute;
+  top: 45px;
+  left: 78%;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.formItem .fa-eye-slash {
+  position: absolute ;
+  top: 45px;
+  left: 78%;
+  cursor: pointer;
+}
